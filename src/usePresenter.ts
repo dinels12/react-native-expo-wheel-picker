@@ -1,8 +1,8 @@
 // src/usePresenter.ts
-import { useCallback, useState } from 'react';
-import findIndex from 'lodash/findIndex';
-import isUndefined from 'lodash/isUndefined';
-import { itemHeight } from './constant';
+import findIndex from "lodash/findIndex";
+import isUndefined from "lodash/isUndefined";
+import { useCallback, useState } from "react";
+import { itemHeight } from "./constant";
 
 interface IProps {
   initialValue: any | undefined;
@@ -26,13 +26,11 @@ export default function usePresenter({
     };
   });
 
-  const defaultIndex = isUndefined(initialValue)
-    ? 0
-    : findIndex(items, { value: initialValue });
+  const defaultIndex = isUndefined(initialValue) ? 0 : findIndex(items, { value: initialValue });
 
   const [currentIndex, setCurrentIndex] = useState(defaultIndex);
 
-  const onValueChange = useCallback((event) => {
+  const onValueChange = useCallback((event: any) => {
     setCurrentIndex(Math.floor(event.nativeEvent.contentOffset.y / itemHeight));
   }, []);
 
