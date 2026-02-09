@@ -1,6 +1,6 @@
 {
   "name": "react-native-expo-modern-wheel-picker",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Modern wheel picker for React Native and Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -46,7 +46,7 @@
     "prettier": "^3.2.0",
     "react": "^18.3.1",
     "@types/jest": "^26.0.0",
-    "@types/lodash": "^4.14.178",
+    "expo-linear-gradient": "~14.1.5",
     "react-native": "^0.76.0",
     "react-native-builder-bob": "^0.30.0",
     "typescript": "^5.3.0",
@@ -55,7 +55,6 @@
   "peerDependencies": {
     "react": ">=19.0.0",
     "expo": ">=53.0.0",
-    "lodash": "^4.17.21",
     "react-native": ">=0.79.0"
   },
   "dependencies": {
