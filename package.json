@@ -19,12 +19,7 @@
     "test": "jest",
     "build": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
-    "example": "cd example && npm start",
-    "example:install": "cd example && npm install",
-    "example:ios": "cd example && npm run ios",
-    "example:android": "cd example && npm run android",
-    "example:web": "cd example && npm run web"
+    "prepare": "bob build"
   },
   "keywords": [
     "react-native",
@@ -58,9 +53,10 @@
     "babel-preset-expo": "^13.0.2"
   },
   "peerDependencies": {
-    "react": ">=18.0.0",
+    "react": ">=19.0.0",
+    "expo": ">=53.0.0",
     "lodash": "^4.17.21",
-    "react-native": ">=0.76.0"
+    "react-native": ">=0.79.0"
   },
   "dependencies": {
     "react-native-reanimated": "^3.17.4"
