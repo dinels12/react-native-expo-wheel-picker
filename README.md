@@ -1,76 +1,36 @@
-# react-native-expo-wheel-picker
+## Example App
 
-Modern wheel picker for React Native and Expo 53+
-
-## Installation
+To run the example app:
 
 ```bash
-npm install react-native-expo-wheel-picker
-# or
-yarn add react-native-expo-wheel-picker
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/react-native-expo-wheel-picker.git
+cd react-native-expo-wheel-picker
+
+# Install dependencies and build
+npm install
+npm run prepare
+
+# Install example dependencies
+npm run example:install
+
+# Run example
+npm run example
+
+# Or run on specific platform
+npm run example:ios      # iOS Simulator
+npm run example:android  # Android Emulator
+npm run example:web      # Web Browser
 ```
 
-## Peer Dependencies
+## Development
 
-Make sure you have these installed:
+When developing the library, changes to `src/` will automatically reflect in the example app thanks to the linked package.
 
 ```bash
-npx expo install react-native-reanimated
+# Watch for changes and rebuild
+npm run build -- --watch
+
+# In another terminal, run example
+npm run example
 ```
-
-## Configuration
-
-Ensure your `babel.config.js` includes:
-
-```javascript
-module.exports = function (api) {
-  api.cache(true);
-  return {
-    presets: ["babel-preset-expo"],
-    plugins: ["react-native-reanimated/plugin"], // Must be last!
-  };
-};
-```
-
-## Usage
-
-```typescript
-import WheelPicker from 'react-native-expo-wheel-picker';
-
-const items = [
-  { id: 1, name: 'Item 1', value: 1 },
-  { id: 2, name: 'Item 2', value: 2 },
-];
-
-function App() {
-  const [value, setValue] = useState(1);
-
-  return (
-    <WheelPicker
-      numberOfVisibleRows={7}
-      value={value}
-      onChange={(index) => setValue(index)}
-      items={items}
-    />
-  );
-}
-```
-
-## Props
-
-| Prop                | Type     | Default  | Description                     |
-| ------------------- | -------- | -------- | ------------------------------- |
-| items               | Array    | required | Array of items to display       |
-| value               | number   | required | Currently selected value        |
-| onChange            | function | required | Callback when selection changes |
-| numberOfVisibleRows | number   | 5        | Number of visible rows          |
-
-## Requirements
-
-- Expo SDK 53+
-- React Native 0.76+
-- React 18+
-
-## License
-
-MIT
