@@ -1,0 +1,23 @@
+# Development files
+example/
+src/
+*.md
+!README.md
+
+# Config files
+tsconfig.json
+tsconfig.build.json
+babel.config.js
+.eslintrc.js
+.prettierrc
+
+# Build artifacts
+*.tgz
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# CI/CD
+.github/

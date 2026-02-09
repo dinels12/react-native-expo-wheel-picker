@@ -1,5 +1,5 @@
 {
-  "name": "react-native-expo-wheel-picker",
+  "name": "react-native-expo-modern-wheel-picker",
   "version": "0.2.0",
   "description": "Modern wheel picker for React Native and Expo",
   "main": "lib/commonjs/index",
