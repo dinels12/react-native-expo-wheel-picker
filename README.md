@@ -1,36 +1,52 @@
-## Example App
+# react-native-expo-wheel-picker
 
-To run the example app:
+Modern wheel picker for React Native and Expo 53+
 
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/react-native-expo-wheel-picker.git
-cd react-native-expo-wheel-picker
-
-# Install dependencies and build
-npm install
-npm run prepare
-
-# Install example dependencies
-npm run example:install
-
-# Run example
-npm run example
-
-# Or run on specific platform
-npm run example:ios      # iOS Simulator
-npm run example:android  # Android Emulator
-npm run example:web      # Web Browser
-```
-
-## Development
-
-When developing the library, changes to `src/` will automatically reflect in the example app thanks to the linked package.
+## Installation
 
 ```bash
-# Watch for changes and rebuild
-npm run build -- --watch
-
-# In another terminal, run example
-npm run example
+npm install react-native-expo-modern-wheel-picker
 ```
+
+## Usage
+
+```typescript
+import WheelPicker from 'react-native-expo-modern-wheel-picker';
+
+const items = [
+  { id: 1, name: 'Item 1', value: 1 },
+  { id: 2, name: 'Item 2', value: 2 },
+];
+
+function App() {
+  const [value, setValue] = useState(0);
+
+  return (
+    <WheelPicker
+      numberOfVisibleRows={5}
+      value={value}
+      onChange={setValue}
+      items={items}
+    />
+  );
+}
+```
+
+## Props
+
+| Prop                | Type                    | Required | Default | Description                     |
+| ------------------- | ----------------------- | -------- | ------- | ------------------------------- |
+| items               | WheelPickerItem[]       | Yes      | -       | Array of items to display       |
+| value               | number                  | Yes      | -       | Index of selected item          |
+| onChange            | (index: number) => void | Yes      | -       | Callback when selection changes |
+| numberOfVisibleRows | number                  | No       | 5       | Number of visible rows          |
+
+## Requirements
+
+- Expo SDK 53+
+- React Native 0.76+
+- React 18+
+
+## License
+
+MIT
