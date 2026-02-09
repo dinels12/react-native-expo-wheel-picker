@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/1997roylee/react-native-expo-wheel-picker",
+  "repository": "https://github.com/dinels12/react-native-expo-wheel-picker",
   "author": "Roy <1997roylee@gmail.com> (https://github.com/1997roylee)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1997roylee/react-native-expo-wheel-picker/issues"
+    "url": "https://github.com/dinels12/react-native-expo-wheel-picker/issues"
   },
-  "homepage": "https://github.com/1997roylee/react-native-expo-wheel-picker#readme",
+  "homepage": "https://github.com/dinels12/react-native-expo-wheel-picker#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
