@@ -41,7 +41,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
-    "@types/jest": "29.5.14",
+    "@types/jest": "30.0.0",
     "@types/react": "19.2.14",
     "babel-preset-expo": "55.0.16",
     "eslint": "9.39.4",
@@ -58,8 +58,9 @@
     "react-native": ">=0.83.0"
   },
   "dependencies": {
-    "expo-haptics": "~14.1.4",
-    "react-native-reanimated": "^4.3.0"
+    "expo-haptics": "~55.0.13",
+    "react-native-reanimated": "^4.3.0",
+    "react-native-worklets": "0.8.1"
   },
   "react-native-builder-bob": {
     "source": "src",
