@@ -1,11 +1,12 @@
-import type { FlatListProps } from 'react-native';
+import { JSX } from "react";
+import type { FlatListProps } from "react-native";
 
 export type ItemType = { label: string; value: any };
 export type RenderItemProps = {
   fontSize: number;
   label: string;
   fontColor: string;
-  textAlign: 'center' | 'auto' | 'left' | 'right' | 'justify';
+  textAlign: "center" | "auto" | "left" | "right" | "justify";
 };
 
 export interface IViuPickerProps {
